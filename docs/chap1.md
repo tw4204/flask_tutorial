@@ -3,7 +3,7 @@ Flask mega tutorial 1
 
 (https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
-####우선 python 버전을 정해보자
+#### 우선 python 버전을 정해보자
 
 2017년 인스타 그램이 대부분의 파이썬 코드를 python3로 바꿨다.
 1.	python 3부터 타이핑을 제공한다. ( python 2는 제공은 하는데 의무는 아닌듯 )
@@ -16,12 +16,12 @@ Flask mega tutorial 1
 
 ### Installing Python
 
-####홈 브루 설치
+#### 홈 브루 설치
 
 ``` bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
-####파이썬 설치
+#### 파이썬 설치
 ``` bash
 $ brew install python
 ```
@@ -36,7 +36,7 @@ $ python3 -m venv venv
 
 
 
-####vevn 활성화
+#### vevn 활성화
 
 ~/.bash_profile에 아래의 코드 추가
 ```bash
