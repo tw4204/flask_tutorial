@@ -6,7 +6,7 @@ Flask Turorial
 2. `flask run`
 
 ### Progress
-[Chapter 1: Hello, World! (this article)](docs/chap1.md) **(Done)**
+[Chapter 1: Hello, World!](docs/chap1.md) **(Done)**
 
 Chapter 2: Templates
 
