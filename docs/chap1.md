@@ -1,8 +1,6 @@
 Flask mega tutorial 1
 ==
 
-(https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
-
 #### 우선 python 버전을 정해보자
 
 2017년 인스타 그램이 대부분의 파이썬 코드를 python3로 바꿨다.
