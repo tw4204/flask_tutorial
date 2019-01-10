@@ -1,17 +1,6 @@
 Flask mega tutorial 1
 ==
 
-#### 우선 python 버전을 정해보자
-
-2017년 인스타 그램이 대부분의 파이썬 코드를 python3로 바꿨다.
-1.	python 3부터 타이핑을 제공한다. ( python 2는 제공은 하는데 의무는 아닌듯 )
-2.	python3 가 런타임이 더 빠르다.
-3.	대부분 python3를 쓰는 추세다.
-
-(출처 : https://learntocodewith.me/programming/python/python-2-vs-python-3/#2018-differences-of-python2-vs-3)
-
->python 3을 쓰자.
-
 ### Installing Python
 
 #### 홈 브루 설치
