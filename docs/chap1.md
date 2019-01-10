@@ -93,7 +93,20 @@ def index():
 ```
 
 decorator를 통해 정의된 함수를 url과 bind한다.
-
+> app은 flask instance이다.
+https://github.com/pallets/flask/blob/master/flask/app.py
+위의 링크에 flask 클래스 정의되어 있다.
+flask 클래스안의 route 함수를 보자.
+>``` python{.line-numbers}
+> def route(self, rule, **options):
+> ... 중략 ...
+>   def decorator(f):
+>     endpoint = options.pop('endpoint', None)
+>     self.add_url_rule(rule, endpoint, f, **options)
+>     return f
+> return decorator
+>```
+>5번째 줄에서 routing해줄 url을 나타내는 'rule'과 decorator로 꾸며줄 함수 'f'를 bind해준다.
 #### test 하기
 
 우선 간단한 테스트용 스크립트를 만든다.
