@@ -8,7 +8,7 @@ Flask Turorial
 ### Progress
 [Chapter 1: Hello, World!](docs/chap1.md) **(Done)**
 
-Chapter 2: Templates
+[Chapter 2: Templates](docs/chap2.md) **(Done)**
 
 Chapter 3: Web Forms
 
