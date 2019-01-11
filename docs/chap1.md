@@ -55,7 +55,7 @@ $ workoff
 ```
 #### __init\__.&#8203;py 생성
 [ ~/app/__init\__.py ]
-```python {.line-numbers}
+```python
 from flask import Flask
 app = Flask(__name__)
 from app import routes
@@ -72,7 +72,7 @@ import를 가장 밑에 했다. (bottom import)
 #### routes.&#8203;py 생성
 
 [ ~/app/routes.py ]
-```python {.line-numbers}
+```python
 from app import app
 
 @app.route('/')
@@ -86,7 +86,7 @@ decorator를 통해 정의된 함수를 url과 bind한다.
 https://github.com/pallets/flask/blob/master/flask/app.py
 위의 링크에 flask 클래스 정의되어 있다.
 flask 클래스안의 route 함수를 보자.
->``` python{.line-numbers}
+>``` python
 > def route(self, rule, **options):
 > ... 중략 ...
 >   def decorator(f):
@@ -101,7 +101,7 @@ flask 클래스안의 route 함수를 보자.
 우선 간단한 테스트용 스크립트를 만든다.
 [~/test.py]
 
-```python {.line-numbers}
+```python
 from app import app
 ```
 

@@ -61,7 +61,7 @@ template을 위한 디렉토리를 우선 만든다.
 {{}}로 둘러싸인 부분은 동적으로 변하는 placeholder다.
 아래의 새로운 view function을 보자.
 [~/app/routes.py]
-```python{.line-numbers}
+```python
 from flask import render_template
 from app import app
 
@@ -78,7 +78,7 @@ def index():
 ### Jinja
 jinja에서는 다양한 기능을 제공해준다.
 #### Conditional Statements
-```html{.line-numbers}
+```html
 <html>
     <head>
         {% if title %}
@@ -100,7 +100,7 @@ loop를 보여주기 위해, 일단 가상의 post들을 만들어준다.
 
 [~/app/routes.py]
 
-```python{.line-numbers}
+```python
 from flask import render_template
 from app import app
 
@@ -123,7 +123,7 @@ def index():
 
 [~/app/templates/index.html]
 
-```html{.line-numbers}
+```html
 <html>
     <head>
         {% if title %}
@@ -151,7 +151,7 @@ index.html에 코드를 추가해 구현할 수 있겠지만, 초기 화면외�
 간단한 navigation bar가 구현된 base 템플릿을 만든다.
 
 [~/app/templates/base.html]
-```html{.line-numbers}
+```html
 <html>
     <head>
       {% if title %}
@@ -172,7 +172,7 @@ index.html에 코드를 추가해 구현할 수 있겠지만, 초기 화면외�
 기존의 index 템플릿은 다음과 같이 바꿀 수 있다.
 
 [~/app/templates/index.html]
-```html{.line-numbers}
+``` jinja
 {% extends "base.html" %}
 
 {% block content %}
