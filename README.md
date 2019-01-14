@@ -10,15 +10,15 @@ Flask Turorial
 
 [Chapter 2: Templates](docs/chap2.md) **(Done)**
 
-Chapter 3: Web Forms
+Chapter 3: Web Forms **(Done)**
 
-Chapter 4: Database
+Chapter 4: Database **(Done)**
 
-Chapter 5: User Logins
+Chapter 5: User Logins **(Done)**
 
-Chapter 6: Profile Page and Avatars
+Chapter 6: Profile Page and Avatars **(Done)**
 
-Chapter 7: Error Handling
+Chapter 7: Error Handling **(Done)**
 
 Chapter 8: Followers
 
