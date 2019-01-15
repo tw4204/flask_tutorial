@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-01-15 13:45+0900\n"
+"POT-Creation-Date: 2019-01-15 15:40+0900\n"
 "PO-Revision-Date: 2019-01-15 13:45+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -78,52 +78,56 @@ msgstr "아무거나 입력해주세요."
 msgid "Request Password Reset"
 msgstr "비밀번호 재설정 요청"
 
-#: app/routes.py:21
+#: app/routes.py:25
 msgid "Your post is now live!"
 msgstr "게시물이 등록되었습니다!"
 
-#: app/routes.py:37
+#: app/routes.py:41
 msgid "Invalid username or password"
 msgstr "잘못된 사용자 이름 또는 비밀번호"
 
-#: app/routes.py:62
+#: app/routes.py:66
 msgid "Congratulations, you are now a registered user!"
 msgstr "축하합니다. 회원가입이 완료되었습니다!"
 
-#: app/routes.py:93
+#: app/routes.py:97
 msgid "Your changes have been saved."
 msgstr "변경 사항이 저장되었습니다."
 
-#: app/routes.py:106 app/routes.py:121
+#: app/routes.py:110 app/routes.py:125
 #, python-format
 msgid "User %(username)s not found."
 msgstr "사용자 % (사용자 이름)을 찾을 수 없습니다."
 
-#: app/routes.py:109
+#: app/routes.py:113
 msgid "You cannot follow yourself!"
 msgstr "자기 자신을 팔로우 할 수 없습니다."
 
-#: app/routes.py:113
+#: app/routes.py:117
 #, python-format
 msgid "You are following %(username)s!"
 msgstr "% (username) 님을 팔로우하고 있습니다!"
 
-#: app/routes.py:124
+#: app/routes.py:128
 msgid "You cannot unfollow yourself!"
 msgstr "자기 자신을 언팔로우 할 수 없습니다!"
 
-#: app/routes.py:128
+#: app/routes.py:132
 #, python-format
 msgid "You are not following %(username)s!"
 msgstr "% (username) 님을 팔로우하고 있지 않습니다."
 
-#: app/routes.py:149
+#: app/routes.py:153
 msgid "Check your email for the instructions to reset your password"
 msgstr "이메일 재설정을위한 지침을 확인하십시오."
 
-#: app/routes.py:164
+#: app/routes.py:168
 msgid "Your password has been reset."
 msgstr "비밀번호가 초기화되었습니다."
+
+#: app/translate.py:9
+msgid "Error: language detction error."
+msgstr "에러: 언어 감지 실패."
 
 #: app/templates/404.html:4
 msgid "File Not Found"
@@ -145,6 +149,10 @@ msgstr "관리자에게 통보되었습니다. 불편을 드려 죄송합니다!
 #, python-format
 msgid " %(username)s said %(when)s "
 msgstr " %(username)s가 %(when)s 에 작성함"
+
+#: app/templates/_post.html:21
+msgid "Translate"
+msgstr "번역하기"
 
 #: app/templates/base.html:4
 msgid "Welcome to Microblog"
@@ -169,6 +177,10 @@ msgstr "프로필"
 #: app/templates/base.html:29
 msgid "Logout"
 msgstr "로그 아웃"
+
+#: app/templates/base.html:66
+msgid "Error: Could not contact server."
+msgstr "에러: 서버에 접속할 수 없음."
 
 #: app/templates/edit_profile.html:4
 msgid "Edit Profile"

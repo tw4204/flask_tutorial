@@ -12,4 +12,4 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['tw4204@naver.com']
     POSTS_PER_PAGE = 5
-    LANGUAGES = ['ko', 'ko\-KR','en', 'es']
+    LANGUAGES = ['ko', 'ko\-KR','en', 'es','zh']
