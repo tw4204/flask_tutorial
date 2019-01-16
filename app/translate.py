@@ -1,5 +1,4 @@
 from flask import jsonify
-from app import app
 from translate_api.translate_api import api
 from flask_babel import _
 def translate(text, source_language, dest_language):
