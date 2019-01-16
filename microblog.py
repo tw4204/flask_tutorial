@@ -1,8 +1,11 @@
 from app import db, cli, create_app
 from app.models import User, Post
 from dotenv import load_dotenv
+import os
 
-load_dotenv()
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.flaskenv'))
+
 app = create_app()
 cli.register(app)
 
