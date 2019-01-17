@@ -1,0 +1,132 @@
+2019-01-17 15:20:36,066 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 16:26:59,660 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 16:27:44,892 ERROR: Unhandled exception [in ./app/tasks.py:34]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 24, in export_posts
+    send_email('[Microblog] Your blog posts',
+NameError: name 'send_email' is not defined
+2019-01-17 16:58:18,699 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 16:59:03,923 ERROR: Unhandled exception [in ./app/tasks.py:34]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 24, in export_posts
+    send_email('[Microblog] Your blog posts',
+NameError: name 'send_email' is not defined
+2019-01-17 16:59:27,013 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:00:12,258 ERROR: Unhandled exception [in ./app/tasks.py:34]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 24, in export_posts
+    send_email('[Microblog] Your blog posts',
+NameError: name 'send_email' is not defined
+2019-01-17 17:05:07,357 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:05:22,523 ERROR: Unhandled exception [in ./app/tasks.py:34]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 24, in export_posts
+    send_email('[Microblog] Your blog posts',
+NameError: name 'send_email' is not defined
+2019-01-17 17:06:28,371 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:06:43,519 ERROR: Unhandled exception [in ./app/tasks.py:35]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 27, in export_posts
+    text_body=render_template('email/export_posts.txt', user=user),
+NameError: name 'render_template' is not defined
+2019-01-17 17:07:16,845 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:07:22,006 ERROR: Unhandled exception [in ./app/tasks.py:36]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 31, in export_posts
+    json.dumps({'posts': data}, indent=4))],
+NameError: name 'json' is not defined
+2019-01-17 17:07:53,525 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:07:58,752 ERROR: Unhandled exception [in ./app/tasks.py:37]
+Traceback (most recent call last):
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 852, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 600, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 440, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./app/tasks.py", line 33, in export_posts
+    sync=True)
+  File "./app/email.py", line 18, in send_email
+    mail.send(msg)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 984, in quit
+    res = self.docmd("quit")
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 420, in docmd
+    self.putcmd(cmd, args)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2019-01-17 17:11:27,890 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:11:33,071 ERROR: Unhandled exception [in ./app/tasks.py:37]
+Traceback (most recent call last):
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 852, in sendmail
+    self.ehlo_or_helo_if_needed()
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 600, in ehlo_or_helo_if_needed
+    if not (200 <= self.ehlo()[0] <= 299):
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 440, in ehlo
+    self.putcmd(self.ehlo_msg, name or self.local_hostname)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./app/tasks.py", line 33, in export_posts
+    sync=True)
+  File "./app/email.py", line 18, in send_email
+    mail.send(msg)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/Users/tw4204/git/flask/venv/lib/python3.7/site-packages/flask_mail.py", line 152, in __exit__
+    self.host.quit()
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 984, in quit
+    res = self.docmd("quit")
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 420, in docmd
+    self.putcmd(cmd, args)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 367, in putcmd
+    self.send(str)
+  File "/usr/local/Cellar/python/3.7.2/Frameworks/Python.framework/Versions/3.7/lib/python3.7/smtplib.py", line 359, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+2019-01-17 17:13:45,685 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:13:45,767 ERROR: Unhandled exception [in ./app/tasks.py:37]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 19, in export_posts
+    0/0
+ZeroDivisionError: division by zero
+2019-01-17 17:19:53,479 INFO: Microblog startup [in ./app/__init__.py:70]
+2019-01-17 17:19:53,557 ERROR: Unhandled exception [in ./app/tasks.py:37]
+Traceback (most recent call last):
+  File "./app/tasks.py", line 18, in export_posts
+    0/0
+ZeroDivisionError: division by zero
+2019-01-17 17:21:12,017 INFO: Microblog startup [in ./app/__init__.py:70]

@@ -10,7 +10,8 @@ class Config(object):
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['tw4204@naver.com']
+    ADMINS = ['flask.test.1.2@gmail.com']
     POSTS_PER_PAGE = 5
     LANGUAGES = ['ko', 'ko\-KR','en', 'es','zh']
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'
