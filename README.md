@@ -20,34 +20,34 @@ Chapter 6: Profile Page and Avatars **(Done)**
 
 Chapter 7: Error Handling **(Done)**
 
-Chapter 8: Followers
+Chapter 8: Followers **(Done)**
 
-Chapter 9: Pagination
+Chapter 9: Pagination **(Done)**
 
-Chapter 10: Email Support
+Chapter 10: Email Support **(Done)**
 
-Chapter 11: Facelift
+Chapter 11: Facelift **(Done)**
 
-Chapter 12: Dates and Times
+Chapter 12: Dates and Times **(Done)**
 
-Chapter 13: I18n and L10n
+Chapter 13: I18n and L10n **(Done)**
 
-Chapter 14: Ajax
+Chapter 14: Ajax **(Done)**
 
-Chapter 15: A Better Application Structure
+Chapter 15: A Better Application Structure **(Done)**
 
-Chapter 16: Full-Text Search
+Chapter 16: Full-Text Search **(Done)**
 
-Chapter 17: Deployment on Linux
+Chapter 17: Deployment on Linux **(Done)**
 
-Chapter 18: Deployment on Heroku
+Chapter 18: Deployment on Heroku **(Done)**
 
-Chapter 19: Deployment on Docker Containers
+Chapter 19: Deployment on Docker Containers **(Done)**
 
-Chapter 20: Some JavaScript Magic
+Chapter 20: Some JavaScript Magic **(Done)**
 
-Chapter 21: User Notifications
+Chapter 21: User Notifications **(Done)**
 
-Chapter 22: Background Jobs
+Chapter 22: Background Jobs **(Done)**
 
-Chapter 23: Application Programming Interfaces (APIs)
+Chapter 23: Application Programming Interfaces (APIs) **(Done)**
